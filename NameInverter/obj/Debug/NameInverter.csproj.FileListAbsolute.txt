@@ -1,0 +1,7 @@
+C:\Users\algla\source\repos\NameInverter\NameInverter\bin\Debug\NameInverter.exe.config
+C:\Users\algla\source\repos\NameInverter\NameInverter\bin\Debug\NameInverter.exe
+C:\Users\algla\source\repos\NameInverter\NameInverter\bin\Debug\NameInverter.pdb
+C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.csproj.AssemblyReference.cache
+C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.csproj.CoreCompileInputs.cache
+C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.exe
+C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.pdb
