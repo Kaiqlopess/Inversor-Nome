@@ -8,11 +8,15 @@ namespace NameInverter
 {
     public abstract class Name
     {
+
+        public Guid Id { get; set; }
         public string name { get; set; }
+        
 
         public Name(string name)
         {
             this.name = name;
+            this.Id = Guid.NewGuid();   
         }
 
         

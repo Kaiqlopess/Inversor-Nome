@@ -8,14 +8,17 @@ namespace NameInverter
 {
     internal class FuncionalidadeMenu : IFuncionaldiadeMenu
     {
-        public void Adicionar()
+        public Name Adicionar()
         {
             Console.Clear();
             Console.WriteLine("==Adicionar==");
-            Console.WriteLine("Nome: ");
+            Console.Write("Nome: ");
             string nome = Console.ReadLine();
 
+            Name name = new CommonName(nome);
 
+
+            return name;
         }
 
         public void Atualizar()

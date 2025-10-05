@@ -8,8 +8,8 @@ namespace NameInverter
 {
     public interface IFuncionaldiadeMenu
     {
-        void Adicionar();
-        void Atualizar();
+        Name Adicionar();
+        void Atualizar(); 
         void Deletar();
         void Listar();
 
