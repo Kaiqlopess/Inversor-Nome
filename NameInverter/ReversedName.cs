@@ -15,7 +15,7 @@ namespace NameInverter
         }
 
 
-        public override void ReverseName()
+        public void ReverseName()
         {
             string[] words = name.Split(' ');
 

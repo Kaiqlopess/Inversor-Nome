@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public abstract class Name
+    public class CommonName : Name
     {
-        public string name { get; set; }
+        public Guid id {  get; }
+        public string nome { get; set; }
 
-        public Name(string name)
+        public CommonName(string name) : base(name)
         {
+            this.id = Guid.NewGuid(); 
             this.name = name;
         }
-
-        
-
     }
 }

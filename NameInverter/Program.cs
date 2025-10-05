@@ -12,14 +12,32 @@ namespace NameInverter
         static void Main(string[] args)
         {
 
-            Console.Write("Digite seu nome: ");
-            String name = Console.ReadLine();
+            Console.WriteLine("==Menu==");
+            Console.WriteLine("1.Adcionar");
+            Console.WriteLine("2.Atualizar");
+            Console.WriteLine("3.Deletar");
+            Console.WriteLine("4.Listar");
+            Console.Write("Escolha: ");
+            string escolha = Console.ReadLine();
 
-            Name rename = new ReversedName(name);
+            switch (escolha)
+            {
+                case "1":
+                    Console.WriteLine();
+                    break;
+                case "2":
+                    break;
+                case "3":
+                    break;
+                case "4":
+                    break;
+                default:
+                    break;
+            }
+
+            
 
 
-            Console.Write("Nome invertido: ");
-            rename.ReverseName();
 
 
         }
