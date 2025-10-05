@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,15 +34,15 @@ namespace NameInverter
                 switch (escolha)
                 {
                     case "1":
-                        Name names;
-                        names = funcao.Adicionar();
-                        nameCollections.Add(names.Id, names.name);
+                        nameCollections = funcao.Adicionar(nameCollections);
                         break;
                     case "2":
+                        nameCollections = funcao.Atualizar(nameCollections);
                         break;
                     case "3":
                         break;
                     case "4":
+                        funcao.Listar(nameCollections);
                         break;
                     case "5":
                         Console.WriteLine("Programa finalizado!");
@@ -58,12 +59,7 @@ namespace NameInverter
             {
                 Console.WriteLine(nomes.Value);
             }
-
-            
-
-
-
-
+    
         }
     }
 }

@@ -8,10 +8,9 @@ namespace NameInverter
 {
     public interface IFuncionaldiadeMenu
     {
-        Name Adicionar();
-        void Atualizar(); 
+        Dictionary<Guid, string> Adicionar(Dictionary<Guid, string> dicionario);
+        Dictionary<Guid, string> Atualizar(Dictionary<Guid, string> dicionario); 
         void Deletar();
-        void Listar();
-
+        void Listar(Dictionary<Guid, string> dicionario);
     }
 }
