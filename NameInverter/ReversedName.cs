@@ -8,14 +8,13 @@ namespace NameInverter
 {
     public class ReversedName : Name
     {
-        public string name { get; set; }
         public ReversedName(string name) : base(name)
         {
-            this.name = name;
+            
         }
 
 
-        public override void ReverseName()
+        public void ReverseName()
         {
             string[] words = name.Split(' ');
 

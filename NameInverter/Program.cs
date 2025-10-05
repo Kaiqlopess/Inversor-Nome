@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,17 +12,54 @@ namespace NameInverter
     {
         static void Main(string[] args)
         {
+            Dictionary<Guid, string> nameCollections = new Dictionary<Guid, string>();
 
-            Console.Write("Digite seu nome: ");
-            String name = Console.ReadLine();
+            bool executar = true;
 
-            Name rename = new ReversedName(name);
+            while(executar)
+            {
+                Console.Clear();
+                Console.WriteLine("==Menu==");
+                Console.WriteLine("1.Adcionar");
+                Console.WriteLine("2.Atualizar");
+                Console.WriteLine("3.Deletar");
+                Console.WriteLine("4.Listar");
+                Console.WriteLine("5.sair");
+                Console.Write("Escolha: ");
+                string escolha = Console.ReadLine();
 
+                var funcao = new FuncionalidadeMenu();
+                
 
-            Console.Write("Nome invertido: ");
-            rename.ReverseName();
+                switch (escolha)
+                {
+                    case "1":
+                        nameCollections = funcao.Adicionar(nameCollections);
+                        break;
+                    case "2":
+                        nameCollections = funcao.Atualizar(nameCollections);
+                        break;
+                    case "3":
+                        break;
+                    case "4":
+                        funcao.Listar(nameCollections);
+                        break;
+                    case "5":
+                        Console.WriteLine("Programa finalizado!");
+                        Console.WriteLine("Preciosne ENTER");
+                        executar = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
 
-
+            foreach(var nomes in nameCollections)
+            {
+                Console.WriteLine(nomes.Value);
+            }
+    
         }
     }
 }

@@ -5,3 +5,10 @@ C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.csp
 C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.csproj.CoreCompileInputs.cache
 C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.exe
 C:\Users\algla\source\repos\NameInverter\NameInverter\obj\Debug\NameInverter.pdb
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\bin\Debug\NameInverter.exe.config
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\bin\Debug\NameInverter.exe
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\bin\Debug\NameInverter.pdb
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\obj\Debug\NameInverter.csproj.AssemblyReference.cache
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\obj\Debug\NameInverter.csproj.CoreCompileInputs.cache
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\obj\Debug\NameInverter.exe
+C:\Users\algla\OneDrive\Área de Trabalho\programaçao\vs\proggramas\InversorNome\Inversor-Nome\NameInverter\obj\Debug\NameInverter.pdb
