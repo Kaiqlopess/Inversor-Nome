@@ -6,77 +6,25 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    internal class FuncionalidadeMenu : IFuncionaldiadeMenu
-    {
-        public Dictionary<Guid, string> Adicionar(Dictionary<Guid, string> dicionario)
+    public class FuncionalidadeMenu : IFuncionalidadeMenu
+    { 
+        public void menu(string escolha)
         {
-            Console.Clear();
-            Console.WriteLine("==Adicionar==");
-            Console.Write("Nome: ");
-            string nome = Console.ReadLine();
+            Repositorio repositorio = new Repositorio();
+            IOperacaoNome escolhaOperaçao = null;
 
-            Name name = new CommonName(nome);
 
-            if (dicionario.ContainsValue(nome))
+            switch (escolha)
             {
-                Console.WriteLine("Nome ja existe!");
-                Console.WriteLine("Precione ENTER");
-                Console.ReadLine();
-                return dicionario;
-            }
-
-            dicionario.Add(name.Id, name.name);
-
-            return dicionario;
-        }
-
-        public Dictionary<Guid, string> Atualizar(Dictionary<Guid,string> dicionario)
-        {
-            Console.Clear();
-            foreach (var name in dicionario)
-            {
-                Console.WriteLine($"Id {name.Key} Nome: {name.Value}");
-            }
-            Console.WriteLine("==Atualizar==");
-            Console.Write("Nome á atualizar: ");
-            string nome = Console.ReadLine();
-
-
-
-            foreach(var name in dicionario)
-            {
-                if(name.Value == nome)
-                {
-                    Console.Write($"Atualizar nome(id:{name.Key}): ");
-                    string nameAlterado = Console.ReadLine();
-
-                    dicionario[name.Key] = nameAlterado;
-                    Console.WriteLine("Nome alterasdo com sucesso!");
+                case "1":
+                    escolhaOperaçao = new AdicionarNome();
                     break;
-                }
+                default:
+                    break;
             }
 
+            repositorio.ModificarRepositorio(escolhaOperaçao);
+        }  
 
-            return dicionario;
-        }
-
-        public void Deletar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Listar(Dictionary<Guid, string> dicionario)
-        {
-            Console.Clear();
-            Console.WriteLine("==LISTAR==");
-
-            foreach (var name in dicionario)
-            {
-                Console.WriteLine($"Name:{name.Value}");
-            }
-
-            Console.WriteLine("precione ENTER");
-            Console.ReadLine();
-        }
     }
 }

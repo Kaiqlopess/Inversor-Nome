@@ -12,11 +12,10 @@ namespace NameInverter
     {
         static void Main(string[] args)
         {
-            Dictionary<Guid, string> nameCollections = new Dictionary<Guid, string>();
 
-            bool executar = true;
+            var funcao = new FuncionalidadeMenu();
 
-            while(executar)
+            while (true)
             {
                 Console.Clear();
                 Console.WriteLine("==Menu==");
@@ -28,37 +27,17 @@ namespace NameInverter
                 Console.Write("Escolha: ");
                 string escolha = Console.ReadLine();
 
-                var funcao = new FuncionalidadeMenu();
-                
-
-                switch (escolha)
+                if (escolha == "5")
                 {
-                    case "1":
-                        nameCollections = funcao.Adicionar(nameCollections);
-                        break;
-                    case "2":
-                        nameCollections = funcao.Atualizar(nameCollections);
-                        break;
-                    case "3":
-                        break;
-                    case "4":
-                        funcao.Listar(nameCollections);
-                        break;
-                    case "5":
-                        Console.WriteLine("Programa finalizado!");
-                        Console.WriteLine("Preciosne ENTER");
-                        executar = false;
-                        break;
-                    default:
-                        break;
+                    break;
                 }
+
+                funcao.menu(escolha);
+                
             }
             
 
-            foreach(var nomes in nameCollections)
-            {
-                Console.WriteLine(nomes.Value);
-            }
+            
     
         }
     }
