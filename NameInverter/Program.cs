@@ -19,7 +19,7 @@ namespace NameInverter
             {
                 Console.Clear();
                 Console.WriteLine("==Menu==");
-                Console.WriteLine("1.Adcionar");
+                Console.WriteLine("1.Adicionar");
                 Console.WriteLine("2.Atualizar");
                 Console.WriteLine("3.Deletar");
                 Console.WriteLine("4.Listar");

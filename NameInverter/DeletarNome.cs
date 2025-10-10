@@ -8,6 +8,8 @@ namespace NameInverter
 {
     internal class DeletarNome : IOperacaoNome
     {
+        public string categoria => "deletar";
+
         public string LerNome()
         {
             Console.WriteLine("==DELETAR NOME==");
@@ -15,6 +17,11 @@ namespace NameInverter
             string nome = Console.ReadLine();
 
             return nome;
+        }
+
+        Name IOperacaoNome.LerNome()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -8,20 +8,33 @@ namespace NameInverter
 {
     public class Repositorio
     {
-        public Dictionary<Guid, string> ModificarRepositorio(IOperacaoNome tipoOperaçao)
+        private static Repositorio _repositorio;
+        private Dictionary<Guid, string> _dados = new Dictionary<Guid, string>();
+
+        private Repositorio() { }
+
+        public static Repositorio Instacia
         {
-            Dictionary<Guid, string> repositorio = new Dictionary<Guid, string>();
-
-            if (tipoOperaçao.categoria == "adicionar")
+            get 
             {
-                Name nome = tipoOperaçao.LerNome();
-
-                repositorio.Add(nome.Id, nome.name);
-
-                return repositorio;
+                if (_repositorio == null) {
+                    _repositorio = new Repositorio();
+                }
+                return _repositorio; 
             }
-            
-            return repositorio;
-        } 
+        }
+
+        public void Add(Guid key, string nome) 
+        {
+            _dados.Add(key, nome);
+        }
+
+        public void list() 
+        {
+            foreach (var nomes in _dados)
+            {
+                Console.WriteLine($"ID({nomes.Key})/Nome: {nomes.Value}");
+            }
+        }
     }
 }

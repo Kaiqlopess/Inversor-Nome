@@ -13,12 +13,15 @@ namespace NameInverter
         public Name LerNome()
         {
             Console.WriteLine("==ADICIONAR==");
-            Console.WriteLine("Digite nome: ");
+            Console.Write("Digite nome: ");
             string nome = Console.ReadLine();
 
-            /*if (TratamentoString.TratarString(nome)){
-                Console.WriteLine("Nome digitado errado!");
-            }*/
+            while(TratamentoString.TratarString(nome)){
+                Console.Clear();
+                Console.WriteLine("==ADICIONAR==");
+                Console.Write("Digite nome: ");
+                nome = Console.ReadLine();
+            }
 
             Name nomeTratado = new CommonName(nome);
 
