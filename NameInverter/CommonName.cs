@@ -11,5 +11,8 @@ namespace NameInverter
         public CommonName(string name) : base(name)
         {
         }
+        public CommonName() : base()
+        {
+        }
     }
 }

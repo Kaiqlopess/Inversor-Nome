@@ -12,6 +12,7 @@ namespace NameInverter
 
         public Name LerNome()
         {
+            Console.Clear();
             Console.WriteLine("==ADICIONAR==");
             Console.Write("Digite nome: ");
             string nome = Console.ReadLine();

@@ -19,7 +19,9 @@ namespace NameInverter
             this.Id = Guid.NewGuid();   
         }
 
-        
+        public Name() { }
+
+
 
     }
 }

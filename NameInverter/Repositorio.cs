@@ -29,12 +29,43 @@ namespace NameInverter
             _dados.Add(key, nome);
         }
 
-        public void list() 
+        public void Listar() 
         {
             foreach (var nomes in _dados)
             {
                 Console.WriteLine($"ID({nomes.Key})/Nome: {nomes.Value}");
             }
         }
+
+        public bool DadosIguais(string nome) 
+        {
+            if (_dados.ContainsValue(nome))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public Name Procurar(string nome)
+        {
+            Name nomeAchado = new CommonName();
+
+            foreach (var nomes in _dados)
+            {
+                if (nomes.Value == nome) {
+                    nomeAchado.name = nomes.Value;
+                    nomeAchado.Id = nomes.Key;
+                    return nomeAchado;
+                }
+            }
+            return null;
+        }
+
+        public void Remove(Guid Id)
+        {
+            _dados.Remove(Id);
+        }
+
+
     }
 }

@@ -10,18 +10,24 @@ namespace NameInverter
     {
         public string categoria => "deletar";
 
-        public string LerNome()
+        public Name LerNome()
         {
-            Console.WriteLine("==DELETAR NOME==");
-            Console.WriteLine("Escolha o nome: ");
+            var repositorio = Repositorio.Instacia;
+
+            
+            Console.Write("Escolha o nome: ");
             string nome = Console.ReadLine();
 
-            return nome;
+            while (repositorio.Procurar(nome) == null)
+            {
+                
+                Console.Write("Escolha o nome de novo: ");
+                nome = Console.ReadLine();
+            }
+
+            return repositorio.Procurar(nome);
         }
 
-        Name IOperacaoNome.LerNome()
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 }

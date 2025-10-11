@@ -26,9 +26,20 @@ namespace NameInverter
             {
                 Console.Clear();
                 Console.WriteLine("==LISTAR==");
-                repositorio.list();
+                repositorio.Listar();
 
                 Console.ReadLine();
+            }
+
+            if(tipoOperaçao.categoria == "deletar")
+            {
+                Console.Clear();
+                Console.WriteLine("==Deletar==");
+                repositorio.Listar();
+
+                Name nome = tipoOperaçao.LerNome();
+
+                repositorio.Remove(nome.Id);
             }
             
         } 
