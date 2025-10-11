@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class FuncionalidadeMenu : IFuncionalidadeMenu
+    public class FuncionalidadeMenu
     { 
 
         public void menu(string escolha)
@@ -20,13 +20,15 @@ namespace NameInverter
                 case "1":
                     escolhaOperaçao = new AdicionarNome();
                     break;
+                case "2":
+                    escolhaOperaçao = new AtualizarNome();
+                    break;
                 case "3":
                     escolhaOperaçao = new DeletarNome();
                     break;
                 case "4":
                     escolhaOperaçao = new ListarNome();
                     break;
-
                 default:
                     Console.WriteLine("Opçao nao existe!");
                     Console.WriteLine("aperte ENTER!");

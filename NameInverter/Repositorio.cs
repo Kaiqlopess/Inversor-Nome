@@ -66,6 +66,10 @@ namespace NameInverter
             _dados.Remove(Id);
         }
 
+        public void Atualizar(Guid Id, string nome) {
+            _dados[Id] = nome;
+        }
+
 
     }
 }

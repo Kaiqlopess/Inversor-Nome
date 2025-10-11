@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\algla\\source\\repos\\NameInverter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\deletarnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\deletarnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|c:\\users\\algla\\source\\repos\\nameinverter\\nameinverter\\operacaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\operacaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\funcionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\funcionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\ioperacaonome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\ioperacaonome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\funcionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\funcionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\operacaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\operacaorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|c:\\users\\algla\\source\\repos\\nameinverter\\nameinverter\\atualizarnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\atualizarnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\tratamentostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\listarnome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\reversedname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\reversedname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|C:\\Users\\algla\\source\\repos\\NameInverter\\nameinverter\\ifuncionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF451BAC-BB62-4DFB-B2F6-A6C53B7E8483}|NameInverter\\NameInverter.csproj|solutionrelative:nameinverter\\ifuncionalidademenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,63 +58,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DeletarNome.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\DeletarNome.cs",
-              "RelativeDocumentMoniker": "NameInverter\\DeletarNome.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\DeletarNome.cs",
-              "RelativeToolTip": "NameInverter\\DeletarNome.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAjwBAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T17:33:10.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "OperacaoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\OperacaoRepositorio.cs",
               "RelativeDocumentMoniker": "NameInverter\\OperacaoRepositorio.cs",
               "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\OperacaoRepositorio.cs",
               "RelativeToolTip": "NameInverter\\OperacaoRepositorio.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T23:59:54.01Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "AtualizarNome.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AtualizarNome.cs",
+              "RelativeDocumentMoniker": "NameInverter\\AtualizarNome.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AtualizarNome.cs",
+              "RelativeToolTip": "NameInverter\\AtualizarNome.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T19:14:02.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Repositorio.cs",
               "RelativeDocumentMoniker": "NameInverter\\Repositorio.cs",
               "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Repositorio.cs",
               "RelativeToolTip": "NameInverter\\Repositorio.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwDwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwEUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T20:57:53.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdicionarNome.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AdicionarNome.cs",
-              "RelativeDocumentMoniker": "NameInverter\\AdicionarNome.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AdicionarNome.cs",
-              "RelativeToolTip": "NameInverter\\AdicionarNome.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CommonName.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\CommonName.cs",
+              "RelativeDocumentMoniker": "NameInverter\\CommonName.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\CommonName.cs",
+              "RelativeToolTip": "NameInverter\\CommonName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T23:43:31.979Z",
+              "WhenOpened": "2025-10-04T20:16:57.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TratamentoString.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\TratamentoString.cs",
+              "RelativeDocumentMoniker": "NameInverter\\TratamentoString.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\TratamentoString.cs",
+              "RelativeToolTip": "NameInverter\\TratamentoString.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T23:51:55.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuncionalidadeMenu.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\FuncionalidadeMenu.cs",
+              "RelativeDocumentMoniker": "NameInverter\\FuncionalidadeMenu.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\FuncionalidadeMenu.cs",
+              "RelativeToolTip": "NameInverter\\FuncionalidadeMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAvwAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T18:35:23.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Program.cs",
+              "RelativeDocumentMoniker": "NameInverter\\Program.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Program.cs",
+              "RelativeToolTip": "NameInverter\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T18:20:38.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IOperacaoNome.cs",
               "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\IOperacaoNome.cs",
               "RelativeDocumentMoniker": "NameInverter\\IOperacaoNome.cs",
@@ -132,45 +166,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CommonName.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\CommonName.cs",
-              "RelativeDocumentMoniker": "NameInverter\\CommonName.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\CommonName.cs",
-              "RelativeToolTip": "NameInverter\\CommonName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Title": "AdicionarNome.cs",
+              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AdicionarNome.cs",
+              "RelativeDocumentMoniker": "NameInverter\\AdicionarNome.cs",
+              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\AdicionarNome.cs",
+              "RelativeToolTip": "NameInverter\\AdicionarNome.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T20:16:57.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T23:43:31.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TratamentoString.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\TratamentoString.cs",
-              "RelativeDocumentMoniker": "NameInverter\\TratamentoString.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\TratamentoString.cs",
-              "RelativeToolTip": "NameInverter\\TratamentoString.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T23:51:55.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FuncionalidadeMenu.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\FuncionalidadeMenu.cs",
-              "RelativeDocumentMoniker": "NameInverter\\FuncionalidadeMenu.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\FuncionalidadeMenu.cs",
-              "RelativeToolTip": "NameInverter\\FuncionalidadeMenu.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAvwBIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:35:23.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Name.cs",
               "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Name.cs",
               "RelativeDocumentMoniker": "NameInverter\\Name.cs",
@@ -178,12 +185,11 @@
               "RelativeToolTip": "NameInverter\\Name.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:20:53.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T18:20:53.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ListarNome.cs",
               "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\ListarNome.cs",
               "RelativeDocumentMoniker": "NameInverter\\ListarNome.cs",
@@ -191,20 +197,7 @@
               "RelativeToolTip": "NameInverter\\ListarNome.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T19:55:43.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Program.cs",
-              "RelativeDocumentMoniker": "NameInverter\\Program.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\Program.cs",
-              "RelativeToolTip": "NameInverter\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:20:38.168Z"
+              "WhenOpened": "2025-10-08T19:55:43.362Z"
             },
             {
               "$type": "Document",
@@ -217,18 +210,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T18:23:05.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IFuncionalidadeMenu.cs",
-              "DocumentMoniker": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\IFuncionalidadeMenu.cs",
-              "RelativeDocumentMoniker": "NameInverter\\IFuncionalidadeMenu.cs",
-              "ToolTip": "C:\\Users\\algla\\source\\repos\\NameInverter\\NameInverter\\IFuncionalidadeMenu.cs",
-              "RelativeToolTip": "NameInverter\\IFuncionalidadeMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T01:20:01.659Z"
             }
           ]
         }

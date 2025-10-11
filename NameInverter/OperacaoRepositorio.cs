@@ -41,6 +41,23 @@ namespace NameInverter
 
                 repositorio.Remove(nome.Id);
             }
+
+            if(tipoOperaçao.categoria == "atualizar")
+            {
+                Console.Clear();
+                Console.WriteLine("==Atualizar==");
+                repositorio.Listar();
+
+                Name nome = tipoOperaçao.LerNome();
+
+                Console.Write("Novo Nome: ");
+                string novoNome = Console.ReadLine();
+
+                nome.name = novoNome;
+
+                repositorio.Atualizar(nome.Id, nome.name);
+
+            }
             
         } 
     }
