@@ -55,7 +55,6 @@
     <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OperacaoRepositorio.cs" />
     <Compile Include="Repositorio.cs" />
     <Compile Include="ReversedName.cs" />
     <Compile Include="TratamentoString.cs" />
