@@ -6,27 +6,39 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class AdicionarNome : IOperacaoNome
+    public class AdicionarNome
     {
-        public string categoria { get => "adicionar";}
+        private Repositorio _repositorio;
 
-        public Name LerNome()
+        public AdicionarNome(Repositorio repositorio)
         {
-            Console.Clear();
-            Console.WriteLine("==ADICIONAR==");
-            Console.Write("Digite nome: ");
-            string nome = Console.ReadLine();
-
-            while(TratamentoString.TratarString(nome)){
-                Console.Clear();
-                Console.WriteLine("==ADICIONAR==");
-                Console.Write("Digite nome: ");
-                nome = Console.ReadLine();
-            }
-
-            Name nomeTratado = new CommonName(nome);
-
-            return nomeTratado;
+            this._repositorio = repositorio;
+        }
+        
+        public void Adicionar(string nome)
+        {
+            this._repositorio.Add(nome);
         }
     }
+        //public string categoria { get => "adicionar";}
+
+        //public Name LerNome()
+        //{
+        //    Console.Clear();
+        //    Console.WriteLine("==ADICIONAR==");
+        //    Console.Write("Digite nome: ");
+        //    string nome = Console.ReadLine();
+
+        //    while(TratamentoString.TratarString(nome)){
+        //        Console.Clear();
+        //        Console.WriteLine("==ADICIONAR==");
+        //        Console.Write("Digite nome: ");
+        //        nome = Console.ReadLine();
+        //    }
+
+        //    Name nomeTratado = new CommonName(nome);
+
+        //    return nomeTratado;
+        //}
+    
 }

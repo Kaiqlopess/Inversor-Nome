@@ -6,9 +6,35 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class AtualizarNome : IOperacaoNome
+    public class AtualizarNome
     {
-        public string categoria => "atualizar";
+        private Repositorio _repositorio;
+
+        public AtualizarNome(Repositorio repositorio) 
+        {
+            this._repositorio = repositorio; 
+        }
+
+        public void Atualizar(string nome)
+        {
+            Name nomeAtualizar = _repositorio.Procurar(nome);
+
+            if (nomeAtualizar == null)
+            {
+                Console.WriteLine("ERRO AO DIGITAR O NOME!");
+                Console.ReadLine();
+                return;
+            }
+
+            nomeAtualizar.name = LerNome.LerAtualizar();
+
+            _repositorio.Atualizar(nomeAtualizar.Id, nomeAtualizar.name);
+        }
+    }
+
+
+
+       /* public string categoria => "atualizar";
 
         public Name LerNome()
         {
@@ -29,5 +55,5 @@ namespace NameInverter
             return repositorio.Procurar(nome);
         }
 
-    }
+    }*/
 }

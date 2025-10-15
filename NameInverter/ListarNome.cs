@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class ListarNome : IOperacaoNome
+    public class ListarNome
     {
-        public string categoria => "listar";
+        private Repositorio _repositorio;
 
-        public Name LerNome()
+        public ListarNome(Repositorio repositorio) 
         {
-            throw new NotImplementedException();
+            this._repositorio = repositorio;
         }
+
+        public void Listar() {
+            _repositorio.Listar();
+            Console.ReadLine();
+        }
+
+
     }
 }
 

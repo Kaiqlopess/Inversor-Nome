@@ -24,9 +24,11 @@ namespace NameInverter
             }
         }
 
-        public void Add(Guid key, string nome) 
+        public void Add(string nome) 
         {
-            _dados.Add(key, nome);
+            Name name = new CommonName(nome);
+
+            _dados.Add(name.Id, name.name);
         }
 
         public void Listar() 

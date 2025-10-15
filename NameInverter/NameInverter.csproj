@@ -49,7 +49,9 @@
     <Compile Include="DeletarNome.cs" />
     <Compile Include="FuncionalidadeMenu.cs" />
     <Compile Include="IOperacaoNome.cs" />
+    <Compile Include="LerNome.cs" />
     <Compile Include="ListarNome.cs" />
+    <Compile Include="MenuExibirOperacao.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

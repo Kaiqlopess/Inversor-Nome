@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace NameInverter
 {
     public class OperacaoRepositorio
-    {
-        public void ModificarRepositorio(IOperacaoNome tipoOperaçao)
-        {
+    { }
+        /*public void ModificarRepositorio(IOperacaoNome tipoOperaçao)
+        
             var repositorio = Repositorio.Instacia;
             
 
@@ -57,8 +57,5 @@ namespace NameInverter
 
                 repositorio.Atualizar(nome.Id, nome.name);
 
-            }
-            
-        } 
-    }
+            }*/
 }
