@@ -15,6 +15,12 @@ namespace NameInverter
             Console.Write("Escolha o Nome para Atualizar: ");
         }
 
+        public static void MenuNomeAtualizado()
+        {
+            Console.WriteLine("==ATUALIZAR==");
+            Console.Write("Escolha o novo Nome: ");
+        }
+
         public static void MenuAdicionar()
         {
             Console.WriteLine("==ADICIONAR==");
@@ -25,6 +31,8 @@ namespace NameInverter
             Console.WriteLine("==DELETAR==");
             Console.Write("Escolha o Nome para Deletar: ");
         }
+
+
 
 
     }

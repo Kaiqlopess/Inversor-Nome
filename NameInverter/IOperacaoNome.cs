@@ -8,7 +8,7 @@ namespace NameInverter
 {
     public interface IOperacaoNome
     {
-        string categoria {  get;}
-        Name LerNome();
+
+        void Executar();
     }
 }

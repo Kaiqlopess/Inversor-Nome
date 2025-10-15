@@ -13,31 +13,23 @@ namespace NameInverter
         {
             var repositorio = Repositorio.Instacia;
 
-            string nome;
-
             switch (escolha)
             {
                 case "1":
-                    MenuExibirOperacao.MenuAdicionar();
-                    nome = LerNome.LerAdicionar();
-                    var nomeAdicionado = new AdicionarNome(repositorio);
-                    nomeAdicionado.Adicionar(nome);
+                    IOperacaoNome nomeAdicionado = new AdicionarNome(repositorio);
+                    nomeAdicionado.Executar();
                     break;
                 case "2":
-                    MenuExibirOperacao.MenuAtualizar();
-                    nome = LerNome.LerAtualizar();
-                    var nomeAtualizado = new AtualizarNome(repositorio);
-                    nomeAtualizado.Atualizar(nome);
+                    IOperacaoNome nomeAtualizado = new AtualizarNome(repositorio);
+                    nomeAtualizado.Executar();
                     break;
                 case "3":
-                    MenuExibirOperacao.MenuDeletar();
-                    nome = LerNome.LerDeletar();
-                    var nomeDeletado = new DeletarNome(repositorio);
-                    nomeDeletado.Deletar(nome);
+                    IOperacaoNome nomeDeletado = new DeletarNome(repositorio);
+                    nomeDeletado.Executar();
                     break;
                 case "4":
-                    var listarNome= new ListarNome(repositorio);
-                    listarNome.Listar();
+                    IOperacaoNome listarNome = new ListarNome(repositorio);
+                    listarNome.Executar();
                     break;
                 default:
                     Console.WriteLine("Opçao nao existe!");

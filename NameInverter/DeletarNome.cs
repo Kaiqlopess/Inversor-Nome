@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class DeletarNome
+    public class DeletarNome : IOperacaoNome
     {
         private Repositorio _repositorio;
 
@@ -15,13 +15,21 @@ namespace NameInverter
             _repositorio = repositorio;
         }
 
-        public void Deletar(string nome) {
+        public void Executar() {
+            _repositorio.Listar();
+            Console.WriteLine("---------");
+
+            MenuExibirOperacao.MenuDeletar();
+            string nome = LerNome.LerDeletar();
+
             Name nomeDeletar = _repositorio.Procurar(nome);
+
             if (nomeDeletar == null) {
                 Console.WriteLine("ERRO AO DIGITAR O NOME!");
                 Console.ReadLine();
                 return;
             }
+
             _repositorio.Remove(nomeDeletar.Id);  
         }
 

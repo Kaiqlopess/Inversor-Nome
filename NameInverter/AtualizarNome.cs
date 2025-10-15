@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class AtualizarNome
+    public class AtualizarNome : IOperacaoNome
     {
         private Repositorio _repositorio;
 
@@ -15,8 +15,15 @@ namespace NameInverter
             this._repositorio = repositorio; 
         }
 
-        public void Atualizar(string nome)
+        public void Executar()
         {
+            Console.Clear();
+
+            _repositorio.Listar();
+            Console.WriteLine("------------------");
+
+            MenuExibirOperacao.MenuAtualizar();
+            string nome = LerNome.LerAtualizar();
             Name nomeAtualizar = _repositorio.Procurar(nome);
 
             if (nomeAtualizar == null)
@@ -26,6 +33,8 @@ namespace NameInverter
                 return;
             }
 
+            Console.Clear();
+            MenuExibirOperacao.MenuNomeAtualizado();
             nomeAtualizar.name = LerNome.LerAtualizar();
 
             _repositorio.Atualizar(nomeAtualizar.Id, nomeAtualizar.name);

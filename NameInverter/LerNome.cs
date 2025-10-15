@@ -15,6 +15,8 @@ namespace NameInverter
 
             while (TratamentoString.TratarString(nomeLido))
             {
+                Console.Clear();
+                MenuExibirOperacao.MenuAdicionar();
                 nomeLido = Console.ReadLine();
                 Console.Clear();
             }

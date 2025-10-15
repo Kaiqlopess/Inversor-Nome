@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class ListarNome
+    public class ListarNome : IOperacaoNome
     {
         private Repositorio _repositorio;
 
@@ -15,12 +15,10 @@ namespace NameInverter
             this._repositorio = repositorio;
         }
 
-        public void Listar() {
+        public void Executar() {
             _repositorio.Listar();
             Console.ReadLine();
         }
-
-
     }
 }
 
