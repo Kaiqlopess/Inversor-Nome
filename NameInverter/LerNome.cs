@@ -1,6 +1,8 @@
-﻿using System;
+﻿using NameInverter.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,15 +10,16 @@ namespace NameInverter
 {
     public class LerNome
     {
- 
+        public IMenuExibirOperacao menuExibirOperacao;
+
         public static string LerAdicionar(){
-            
+
             string nomeLido = Console.ReadLine();
 
             while (TratamentoString.TratarString(nomeLido))
             {
                 Console.Clear();
-                MenuExibirOperacao.MenuAdicionar();
+                
                 nomeLido = Console.ReadLine();
                 Console.Clear();
             }

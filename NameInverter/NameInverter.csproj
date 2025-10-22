@@ -43,20 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdicionarNome.cs" />
-    <Compile Include="AtualizarNome.cs" />
-    <Compile Include="CommonName.cs" />
-    <Compile Include="DeletarNome.cs" />
-    <Compile Include="FuncionalidadeMenu.cs" />
+    <Compile Include="CasoDeUso\AdicionarNome.cs" />
+    <Compile Include="CasoDeUso\AtualizarNome.cs" />
+    <Compile Include="CasoDeUso\IAdicionarNome.cs" />
+    <Compile Include="CasoDeUso\IAtualizarNome.cs" />
+    <Compile Include="CasoDeUso\IDeletarNome.cs" />
+    <Compile Include="CasoDeUso\IListarNome.cs" />
+    <Compile Include="Menu\IMenuExibirOperacao.cs" />
+    <Compile Include="NomeConcreto\CommonName.cs" />
+    <Compile Include="CasoDeUso\DeletarNome.cs" />
+    <Compile Include="Menu\FuncionalidadeMenu.cs" />
     <Compile Include="IOperacaoNome.cs" />
     <Compile Include="LerNome.cs" />
-    <Compile Include="ListarNome.cs" />
-    <Compile Include="MenuExibirOperacao.cs" />
-    <Compile Include="Name.cs" />
+    <Compile Include="CasoDeUso\ListarNome.cs" />
+    <Compile Include="Menu\MenuExibirOperacao.cs" />
+    <Compile Include="Nome\Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorio.cs" />
-    <Compile Include="ReversedName.cs" />
+    <Compile Include="Repositorio\Repositorio.cs" />
+    <Compile Include="NomeConcreto\ReversedName.cs" />
     <Compile Include="TratamentoString.cs" />
   </ItemGroup>
   <ItemGroup>

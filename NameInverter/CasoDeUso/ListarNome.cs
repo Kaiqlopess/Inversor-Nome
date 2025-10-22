@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NameInverter.CasoDeUso;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class ListarNome : IOperacaoNome
+    public class ListarNome : IListarNome
     {
         private Repositorio _repositorio;
 
@@ -15,7 +16,7 @@ namespace NameInverter
             this._repositorio = repositorio;
         }
 
-        public void Executar() {
+        public void Listar() {
             _repositorio.Listar();
             Console.ReadLine();
         }

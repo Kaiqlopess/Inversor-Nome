@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NameInverter.CasoDeUso;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,20 +17,20 @@ namespace NameInverter
             switch (escolha)
             {
                 case "1":
-                    IOperacaoNome nomeAdicionado = new AdicionarNome(repositorio);
-                    nomeAdicionado.Executar();
+                    IAdicionarNome nomeAdicionado = new AdicionarNome(repositorio);
+                    nomeAdicionado.Adicionar();
                     break;
                 case "2":
-                    IOperacaoNome nomeAtualizado = new AtualizarNome(repositorio);
-                    nomeAtualizado.Executar();
+                    IAtualizarNome nomeAtualizado = new AtualizarNome(repositorio);
+                    nomeAtualizado.Atualizar();
                     break;
                 case "3":
-                    IOperacaoNome nomeDeletado = new DeletarNome(repositorio);
-                    nomeDeletado.Executar();
+                    IDeletarNome nomeDeletado = new DeletarNome(repositorio);
+                    nomeDeletado.Deletar();
                     break;
                 case "4":
-                    IOperacaoNome listarNome = new ListarNome(repositorio);
-                    listarNome.Executar();
+                    IListarNome listarNome = new ListarNome(repositorio);
+                    listarNome.Listar();
                     break;
                 default:
                     Console.WriteLine("Opçao nao existe!");

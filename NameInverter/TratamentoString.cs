@@ -18,15 +18,13 @@ namespace NameInverter
                 Console.WriteLine("Nome digitado errado!(Não colocar numero)");
                 Console.ReadLine();
                 return true;
-            }
-
-            if (Regex.IsMatch(nome, @"[^a-zA-Z0-9 ]")){
+            }else if(Regex.IsMatch(nome, @"[^a-zA-Z0-9 ]"))
+            {
                 Console.WriteLine("Nome digitado errado!(Não colocar caracteres especiais)");
                 Console.ReadLine();
                 return true;
-            }
-
-            if (repositorio.DadosIguais(nome)){
+            }else if (repositorio.DadosIguais(nome))
+            {
                 Console.WriteLine("Nome ja existe!");
                 Console.WriteLine("Precione ENTER");
                 Console.ReadLine();
