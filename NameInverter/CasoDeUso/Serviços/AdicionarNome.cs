@@ -11,7 +11,7 @@ namespace NameInverter
     public class AdicionarNome : IAdicionarNome
     {
         private Repositorio _repositorio;
-        private IMenuExibirOperacao _menuExibirOperacao;
+        private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
 
         public AdicionarNome(Repositorio repositorio)
         {
@@ -22,7 +22,13 @@ namespace NameInverter
         {
             Console.Clear();
             _menuExibirOperacao.MenuAdicionar();
-            string nome = LerNome.LerAdicionar();
+            string nome = Console.ReadLine();
+
+            if (TratamentoString.TratarString(nome))
+            {
+                return;
+            }
+
             this._repositorio.Add(nome);
         }
 

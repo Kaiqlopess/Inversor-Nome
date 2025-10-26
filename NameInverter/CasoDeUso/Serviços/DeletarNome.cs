@@ -11,7 +11,7 @@ namespace NameInverter
     public class DeletarNome : IDeletarNome
     {
         private Repositorio _repositorio;
-        private IMenuExibirOperacao _menuExibirOperacao;
+        private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
 
         public DeletarNome(Repositorio repositorio) {
             _repositorio = repositorio;
@@ -22,7 +22,7 @@ namespace NameInverter
             Console.WriteLine("---------");
 
             _menuExibirOperacao.MenuDeletar();
-            string nome = LerNome.LerDeletar();
+            string nome = Console.ReadLine();
 
             Name nomeDeletar = _repositorio.Procurar(nome);
 

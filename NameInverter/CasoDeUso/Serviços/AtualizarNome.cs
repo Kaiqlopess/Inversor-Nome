@@ -11,7 +11,8 @@ namespace NameInverter
     public class AtualizarNome : IAtualizarNome
     {
         private Repositorio _repositorio;
-        private IMenuExibirOperacao _menuExibirOperacao;
+        private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
+
         public AtualizarNome(Repositorio repositorio) 
         {
             this._repositorio = repositorio; 
@@ -25,7 +26,8 @@ namespace NameInverter
             Console.WriteLine("------------------");
 
             _menuExibirOperacao.MenuAtualizar();
-            string nome = LerNome.LerAtualizar();
+            string nome = Console.ReadLine();
+
             Name nomeAtualizar = _repositorio.Procurar(nome);
 
             if (nomeAtualizar == null)
@@ -37,7 +39,7 @@ namespace NameInverter
 
             Console.Clear();
             _menuExibirOperacao.MenuNomeAtualizado();
-            nomeAtualizar.name = LerNome.LerAtualizar();
+            nomeAtualizar.name = Console.ReadLine();
 
             _repositorio.Atualizar(nomeAtualizar.Id, nomeAtualizar.name);
         }

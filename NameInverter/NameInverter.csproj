@@ -43,19 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CasoDeUso\AdicionarNome.cs" />
-    <Compile Include="CasoDeUso\AtualizarNome.cs" />
-    <Compile Include="CasoDeUso\IAdicionarNome.cs" />
-    <Compile Include="CasoDeUso\IAtualizarNome.cs" />
-    <Compile Include="CasoDeUso\IDeletarNome.cs" />
-    <Compile Include="CasoDeUso\IListarNome.cs" />
+    <Compile Include="CasoDeUso\Serviços\AdicionarNome.cs" />
+    <Compile Include="CasoDeUso\Serviços\AtualizarNome.cs" />
+    <Compile Include="CasoDeUso\Contratos\IAdicionarNome.cs" />
+    <Compile Include="CasoDeUso\Contratos\IAtualizarNome.cs" />
+    <Compile Include="CasoDeUso\Contratos\IDeletarNome.cs" />
+    <Compile Include="CasoDeUso\Contratos\IListarNome.cs" />
     <Compile Include="Menu\IMenuExibirOperacao.cs" />
     <Compile Include="NomeConcreto\CommonName.cs" />
-    <Compile Include="CasoDeUso\DeletarNome.cs" />
+    <Compile Include="CasoDeUso\Serviços\DeletarNome.cs" />
     <Compile Include="Menu\FuncionalidadeMenu.cs" />
     <Compile Include="IOperacaoNome.cs" />
     <Compile Include="LerNome.cs" />
-    <Compile Include="CasoDeUso\ListarNome.cs" />
+    <Compile Include="CasoDeUso\Serviços\ListarNome.cs" />
     <Compile Include="Menu\MenuExibirOperacao.cs" />
     <Compile Include="Nome\Name.cs" />
     <Compile Include="Program.cs" />

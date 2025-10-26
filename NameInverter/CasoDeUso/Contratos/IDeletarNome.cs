@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter
+namespace NameInverter.CasoDeUso
 {
-    public interface IOperacaoNome
+    public interface IDeletarNome
     {
-
-        void Executar();
+        void Deletar();
     }
 }
