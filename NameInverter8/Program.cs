@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using NameInverter;
+using System;
 
-namespace NameInverter
+namespace NameInverter8
 {
     public class Program
     {
@@ -33,12 +29,12 @@ namespace NameInverter
                 }
 
                 funcao.menu(escolha);
-                
-            }
-            
 
-            
-    
+            }
+
+
+
+
         }
     }
 }
