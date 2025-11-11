@@ -12,7 +12,7 @@ namespace NameInverter
 
         public void menu(string escolha)
         {
-            var repositorio = Repositorio.Instacia;
+            var repositorio = new Repository();
 
             switch (escolha)
             {

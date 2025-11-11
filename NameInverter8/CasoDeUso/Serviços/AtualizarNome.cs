@@ -10,10 +10,10 @@ namespace NameInverter
 {
     public class AtualizarNome : IAtualizarNome
     {
-        private Repositorio _repositorio;
+        private Repository _repositorio;
         private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
 
-        public AtualizarNome(Repositorio repositorio) 
+        public AtualizarNome(Repository repositorio) 
         {
             this._repositorio = repositorio; 
         }
@@ -21,8 +21,7 @@ namespace NameInverter
         public void Atualizar()
         {
             Console.Clear();
-
-            _repositorio.Listar();
+            _repositorio.ToList();
             Console.WriteLine("------------------");
 
             _menuExibirOperacao.MenuAtualizar();
@@ -41,7 +40,7 @@ namespace NameInverter
             _menuExibirOperacao.MenuNomeAtualizado();
             nomeAtualizar.name = Console.ReadLine();
 
-            _repositorio.Atualizar(nomeAtualizar.Id, nomeAtualizar.name);
+            _repositorio.Atualizar((CommonName)nomeAtualizar);
         }
     }
 }

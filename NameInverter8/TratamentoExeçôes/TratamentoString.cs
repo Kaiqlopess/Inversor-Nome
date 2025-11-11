@@ -11,7 +11,7 @@ namespace NameInverter
     {
         public static bool TratarString(string nome)
         {
-            var repositorio = Repositorio.Instacia;
+            var repositorio = new Repository();
 
 
             if (nome.Any(char.IsDigit)) {

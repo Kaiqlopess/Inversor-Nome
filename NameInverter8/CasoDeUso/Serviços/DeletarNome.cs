@@ -10,15 +10,17 @@ namespace NameInverter
 {
     public class DeletarNome : IDeletarNome
     {
-        private Repositorio _repositorio;
+        private Repository _repositorio;
         private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
+        
 
-        public DeletarNome(Repositorio repositorio) {
-            _repositorio = repositorio;
+        public DeletarNome(Repository repositorio) {
+            this._repositorio = repositorio;
         }
 
         public void Deletar() {
-            _repositorio.Listar();
+            Console.Clear();
+            _repositorio.ToList();
             Console.WriteLine("---------");
 
             _menuExibirOperacao.MenuDeletar();
@@ -32,7 +34,7 @@ namespace NameInverter
                 return;
             }
 
-            _repositorio.Remove(nomeDeletar.Id);
+            _repositorio.Remove((CommonName)nomeDeletar);
         }
 
     }

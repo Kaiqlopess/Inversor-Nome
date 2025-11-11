@@ -9,15 +9,16 @@ namespace NameInverter
 {
     public class ListarNome : IListarNome
     {
-        private Repositorio _repositorio;
+        private Repository _repositorio;
 
-        public ListarNome(Repositorio repositorio) 
+        public ListarNome(Repository repositorio) 
         {
             this._repositorio = repositorio;
         }
 
         public void Listar() {
-            _repositorio.Listar();
+
+            _repositorio.ToList();
             Console.ReadLine();
         }
     }

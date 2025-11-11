@@ -10,10 +10,10 @@ namespace NameInverter
 {
     public class AdicionarNome : IAdicionarNome
     {
-        private Repositorio _repositorio;
+        private Repository _repositorio;
         private IMenuExibirOperacao _menuExibirOperacao = new MenuExibirOperacao();
 
-        public AdicionarNome(Repositorio repositorio)
+        public AdicionarNome(Repository repositorio)
         {
             this._repositorio = repositorio;
         }
