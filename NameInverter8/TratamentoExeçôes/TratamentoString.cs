@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NameInverter.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,24 +15,31 @@ namespace NameInverter
             var repositorio = new Repository();
 
 
-            if (nome.Any(char.IsDigit)) {
+            if (nome.Any(char.IsDigit))
+            {
                 Console.WriteLine("Nome digitado errado!(Não colocar numero)");
+                Console.WriteLine("Precione ENTER");
                 Console.ReadLine();
                 return true;
-            }else if(Regex.IsMatch(nome, @"[^a-zA-Z0-9 ]"))
+            }
+            else if (Regex.IsMatch(nome, @"[^a-zA-Z0-9 ]"))
             {
                 Console.WriteLine("Nome digitado errado!(Não colocar caracteres especiais)");
+                Console.WriteLine("Precione ENTER");
                 Console.ReadLine();
                 return true;
-            }else if (repositorio.DadosIguais(nome))
+            }
+            else if (repositorio.DadosIguais(nome))
             {
                 Console.WriteLine("Nome ja existe!");
                 Console.WriteLine("Precione ENTER");
                 Console.ReadLine();
                 return true;
             }
-
-            return false;
+            else 
+            {
+                return false;
+            }
 
         }
     }

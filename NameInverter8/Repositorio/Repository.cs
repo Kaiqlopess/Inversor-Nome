@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NameInverter.Repositorio;
+using NameInverter.Nome.NomeConcreto;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace NameInverter
+namespace NameInverter.Repositorio
 {
     public class Repository : IRepository
     {
@@ -22,14 +24,30 @@ namespace NameInverter
 
         public void Add(string nome) 
         {
-            Name name = new CommonName(nome);
+            string[] words = nome.Split(' ');
 
-            _repositorio.Nomes.Add((CommonName)name);
-            _repositorio.SaveChanges();
+            Name name = new CommonName(words[0]);
+
+            Name sobrenome = new Sobrenome(words[1]);
+
+            sobrenome.Id = name.Id;
+
+            try
+            {
+                _repositorio.Nomes.Add((CommonName)name);
+                _repositorio.Sobrenomes.Add((Sobrenome)sobrenome);
+                _repositorio.SaveChanges();
+            }
+            catch (Exception ex) {
+                Console.WriteLine($"Erro ao inserir o Nome: {ex.Message}");
+            }
+            
         }
 
         public void ToList() 
         {
+
+
             List<CommonName> nomes =_repositorio.Nomes.ToList();
 
             foreach (var nome in nomes)
@@ -55,18 +73,34 @@ namespace NameInverter
             if (nomeAchado != null) {
                 return nomeAchado;
             }
+
             return null;
         }
 
         public void Remove(CommonName nome)
         {
-            _repositorio.Nomes.Remove(nome);
-            _repositorio.SaveChanges();
+            try
+            {
+                _repositorio.Nomes.Remove(nome);
+                _repositorio.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao remover o Nome: {ex.Message}");
+            }
         }
 
-        public void Atualizar(CommonName nome) {
-            _repositorio.Nomes.Update(nome);
-            _repositorio.SaveChanges();
+        public void Update(CommonName nome) {
+
+            try
+            {
+                _repositorio.Nomes.Update(nome);
+                _repositorio.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao Atualizar o Nome: {ex.Message}");
+            }
         }
 
 

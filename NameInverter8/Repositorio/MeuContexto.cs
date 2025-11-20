@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NameInverter.Nome.NomeConcreto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace NameInverter.Repositorio
     {
 
         public DbSet<CommonName> Nomes {  get; set; }
+        public DbSet<Sobrenome> Sobrenomes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

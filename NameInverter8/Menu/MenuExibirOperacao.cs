@@ -32,5 +32,14 @@ namespace NameInverter
             Console.WriteLine("==DELETAR==");
             Console.Write("Escolha o Nome para Deletar: ");
         }
+
+        public void MenuListar()
+        {
+            Console.WriteLine("Escolher Opcao: ");
+            Console.WriteLine("1.Nome");
+            Console.WriteLine("2.Sobrenome");
+            Console.Write("Escolha: ");
+
+        }
     }
 }

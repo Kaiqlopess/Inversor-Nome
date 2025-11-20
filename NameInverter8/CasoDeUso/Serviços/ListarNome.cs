@@ -1,4 +1,5 @@
 ﻿using NameInverter.CasoDeUso;
+using NameInverter.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,11 @@ namespace NameInverter
         }
 
         public void Listar() {
-
+            Console.Clear();
             _repositorio.ToList();
+            Console.WriteLine("Precione ENTER");
             Console.ReadLine();
+            
         }
     }
 }

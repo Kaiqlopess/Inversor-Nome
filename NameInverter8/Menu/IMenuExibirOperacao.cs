@@ -12,5 +12,6 @@ namespace NameInverter.Menu
         void MenuNomeAtualizado();
         void MenuAdicionar();
         void MenuDeletar();
+        void MenuListar();
     }
 }

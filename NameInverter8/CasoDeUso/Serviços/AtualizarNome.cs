@@ -1,5 +1,6 @@
 ﻿using NameInverter.CasoDeUso;
 using NameInverter.Menu;
+using NameInverter.Repositorio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +41,7 @@ namespace NameInverter
             _menuExibirOperacao.MenuNomeAtualizado();
             nomeAtualizar.name = Console.ReadLine();
 
-            _repositorio.Atualizar((CommonName)nomeAtualizar);
+            _repositorio.Update((CommonName)nomeAtualizar);
         }
     }
 }

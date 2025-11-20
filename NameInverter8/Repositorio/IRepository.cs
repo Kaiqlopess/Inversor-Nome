@@ -13,6 +13,6 @@ namespace NameInverter.Repositorio
         bool DadosIguais(string nome);
         Name Procurar(string Nome);
         void Remove(CommonName nome);
-        void Atualizar(CommonName nome);
+        void Update(CommonName nome);
     }
 }
