@@ -20,8 +20,5 @@ namespace NameInverter
         }
 
         public Name() { }
-
-
-
     }
 }

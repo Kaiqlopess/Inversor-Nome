@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter.CasoDeUso
+namespace NameInverter.CasoDeUso.Contratos.Sobrenome
 {
-    public interface IAtualizarNome
+    public interface IDeletarSobrenome
     {
-        void Atualizar();
+        void Deletar(CommonName nome);
     }
 }

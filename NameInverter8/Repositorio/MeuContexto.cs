@@ -12,7 +12,7 @@ namespace NameInverter.Repositorio
     {
 
         public DbSet<CommonName> Nomes {  get; set; }
-        public DbSet<Sobrenome> Sobrenomes { get; set; }
+        public DbSet<SobrenomeName> Sobrenomes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

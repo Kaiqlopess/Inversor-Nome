@@ -13,7 +13,7 @@ namespace NameInverter
         public void MenuAtualizar()
         {
             Console.WriteLine("==ATUALIZAR==");
-            Console.Write("Escolha o Nome para Atualizar: ");
+            Console.Write("Escolha o Id para Atualizar: ");
         }
 
         public void MenuNomeAtualizado()
@@ -30,7 +30,7 @@ namespace NameInverter
 
         public void MenuDeletar() {
             Console.WriteLine("==DELETAR==");
-            Console.Write("Escolha o Nome para Deletar: ");
+            Console.Write("Escolha o Id para Deletar: ");
         }
 
         public void MenuListar()

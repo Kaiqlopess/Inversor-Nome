@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter.CasoDeUso
+namespace NameInverter.CasoDeUso.Contratos.Sobrenome
 {
-    public interface IListarNome
+    public interface IListarSobrenome
     {
         void Listar();
     }

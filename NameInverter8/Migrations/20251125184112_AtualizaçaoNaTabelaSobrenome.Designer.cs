@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NameInverter.Repositorio;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NameInverter.Migrations
 {
     [DbContext(typeof(MeuContexto))]
-    partial class MeuContextoModelSnapshot : ModelSnapshot
+    [Migration("20251125184112_AtualizaçaoNaTabelaSobrenome")]
+    partial class AtualizaçaoNaTabelaSobrenome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,36 +46,13 @@ namespace NameInverter.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("CommonNameId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CommonNameId")
-                        .IsUnique();
-
                     b.ToTable("Sobrenomes");
-                });
-
-            modelBuilder.Entity("NameInverter.Nome.NomeConcreto.SobrenomeName", b =>
-                {
-                    b.HasOne("NameInverter.CommonName", "CommonName")
-                        .WithOne("Sobrenome")
-                        .HasForeignKey("NameInverter.Nome.NomeConcreto.SobrenomeName", "CommonNameId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CommonName");
-                });
-
-            modelBuilder.Entity("NameInverter.CommonName", b =>
-                {
-                    b.Navigation("Sobrenome")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

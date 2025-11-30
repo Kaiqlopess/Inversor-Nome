@@ -1,5 +1,10 @@
 ﻿using NameInverter.CasoDeUso;
+using NameInverter.CasoDeUso.Contratos.Nome;
+using NameInverter.CasoDeUso.Contratos.Sobrenome;
+using NameInverter.CasoDeUso.Serviços.Nome;
+using NameInverter.CasoDeUso.Serviços.Sobrenome;
 using NameInverter.Repositorio;
+using NameInverter.Repositorio.RepositorioSobrenome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,30 +13,31 @@ using System.Threading.Tasks;
 
 namespace NameInverter
 {
-    public class FuncionalidadeMenu
+    public class FuncionalidadeMenuNome
     { 
 
         public void menu(string escolha)
         {
-            var repositorio = new Repository();
+            var repositorioNome = new RepositoryNome();
+            var repositorioSobrenome = new RepositorySobrenome();
 
             switch (escolha)
             {
                 case "1":
-                    IAdicionarNome nomeAdicionado = new AdicionarNome(repositorio);
-                    nomeAdicionado.Adicionar();
+                    InserirNomeCompleto nomeAdicionado = new InserirNomeCompleto();
+                    nomeAdicionado.Inserir();
                     break;
                 case "2":
-                    IAtualizarNome nomeAtualizado = new AtualizarNome(repositorio);
+                    AtualizarNomeCompleto nomeAtualizado = new AtualizarNomeCompleto();
                     nomeAtualizado.Atualizar();
                     break;
                 case "3":
-                    IDeletarNome nomeDeletado = new DeletarNome(repositorio);
+                    DeletarNomeCompleto nomeDeletado = new DeletarNomeCompleto(repositorioNome);
                     nomeDeletado.Deletar();
                     break;
                 case "4":
-                    IListarNome listarNome = new ListarNome(repositorio);
-                    listarNome.Listar();
+                    ListarNomeCompleto listarNomeCompleto = new ListarNomeCompleto();
+                    listarNomeCompleto.listar();
                     break;
                 default:
                     Console.WriteLine("Opçao nao existe!");
@@ -40,6 +46,5 @@ namespace NameInverter
                     return;
             }
         }  
-
     }
 }

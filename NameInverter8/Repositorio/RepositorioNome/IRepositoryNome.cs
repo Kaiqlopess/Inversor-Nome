@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter.Repositorio
+namespace NameInverter.Repositorio.RepositorioNome
 {
-    public interface IRepository
+    public interface IRepositoryNome
     {
-        void Add(string nome);
-        void ToList();
+        void Add(CommonName nome);
+        List<CommonName> ToList();
+        List<CommonName> TolistNameComplete();
         bool DadosIguais(string nome);
-        Name Procurar(string Nome);
+        Name Procurar(Guid Nome);
         void Remove(CommonName nome);
         void Update(CommonName nome);
     }

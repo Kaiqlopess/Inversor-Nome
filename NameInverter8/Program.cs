@@ -9,7 +9,7 @@ namespace NameInverter8
         static void Main(string[] args)
         {
 
-            var funcao = new FuncionalidadeMenu();
+            var funcao = new FuncionalidadeMenuNome();
 
             while (true)
             {

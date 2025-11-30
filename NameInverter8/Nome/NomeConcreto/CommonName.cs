@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NameInverter.Nome.NomeConcreto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace NameInverter
 {
     public class CommonName : Name
     {
+        public SobrenomeName Sobrenome { get; set; }
         public CommonName(string name) : base(name)
         {
         }

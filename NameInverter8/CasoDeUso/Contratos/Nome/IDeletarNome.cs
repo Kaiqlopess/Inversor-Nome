@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter.CasoDeUso
+namespace NameInverter.CasoDeUso.Contratos.Nome
 {
     public interface IDeletarNome
     {
-        void Deletar();
+        void Deletar(Guid IdNome);
     }
 }

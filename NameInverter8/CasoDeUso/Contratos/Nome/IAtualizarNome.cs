@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NameInverter.CasoDeUso
+namespace NameInverter.CasoDeUso.Contratos.Nome
 {
-    public interface IAdicionarNome
+    public interface IAtualizarNome
     {
-        void Adicionar();
+        void Atualizar(string Nome, Guid IdNome);
     }
 }

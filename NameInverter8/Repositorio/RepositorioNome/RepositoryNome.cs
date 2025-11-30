@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NameInverter.Nome.NomeConcreto;
+using NameInverter.Repositorio.RepositorioNome;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -10,50 +11,44 @@ using System.Xml.Linq;
 
 namespace NameInverter.Repositorio
 {
-    public class Repository : IRepository
+    public class RepositoryNome : IRepositoryNome
     {
         private readonly MeuContexto _repositorio;
        
 
-        public Repository() 
+        public RepositoryNome() 
         {
             this._repositorio = new MeuContexto();
         }
 
     
 
-        public void Add(string nome) 
+        public void Add(CommonName nome) 
         {
-            string[] words = nome.Split(' ');
-
-            Name name = new CommonName(words[0]);
-
-            Name sobrenome = new Sobrenome(words[1]);
-
-            sobrenome.Id = name.Id;
-
             try
             {
-                _repositorio.Nomes.Add((CommonName)name);
-                _repositorio.Sobrenomes.Add((Sobrenome)sobrenome);
+                _repositorio.Nomes.Add(nome);
                 _repositorio.SaveChanges();
             }
             catch (Exception ex) {
                 Console.WriteLine($"Erro ao inserir o Nome: {ex.Message}");
-            }
-            
+            }     
         }
 
-        public void ToList() 
+
+        public List<CommonName> ToList() 
         {
-
-
             List<CommonName> nomes =_repositorio.Nomes.ToList();
 
-            foreach (var nome in nomes)
-            {
-                Console.WriteLine($"ID({nome.Id})/Nome: {nome.name}");
-            }
+            return nomes;
+        }
+
+        public List<CommonName> TolistNameComplete()
+        {
+            List<CommonName> list = _repositorio.Nomes.Include(n => n.Sobrenome).ToList();
+
+            return list;
+
         }
 
         public bool DadosIguais(string nome) 
@@ -65,10 +60,10 @@ namespace NameInverter.Repositorio
             return false;
         }
 
-        public Name Procurar(string Nome)
+        public Name Procurar(Guid Nome)
         {
 
-            Name nomeAchado = _repositorio.Nomes.FirstOrDefault(p => p.name == Nome);
+            Name nomeAchado = _repositorio.Nomes.FirstOrDefault(p => p.Id == Nome);
 
             if (nomeAchado != null) {
                 return nomeAchado;
@@ -102,7 +97,5 @@ namespace NameInverter.Repositorio
                 Console.WriteLine($"Erro ao Atualizar o Nome: {ex.Message}");
             }
         }
-
-
     }
 }
